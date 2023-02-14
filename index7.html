@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Seven program</title>
+  </head>
+  <body>
+    <script>
+      //7 - Write a js program to input any alphabet and check whether it is vowel or consonant.
+
+      function myfun() {
+        var ud = prompt("Enter Character");
+        if ((ud >= "a" && ud <= "z") || (ud >= "A" && ud <= "Z")) {
+          if (
+            ud == "a" ||
+            ud == "A" ||
+            ud == "e" ||
+            ud == "E" ||
+            ud == "i" ||
+            ud == "I" ||
+            ud == "o" ||
+            ud == "O" ||
+            ud == "u" ||
+            ud == "U"
+          ) {
+            document.write("This is vowels");
+          } else {
+            document.write("This is consonant");
+          }
+        } else {
+          document.write("This is not vowel and consonant. This is number");
+        }
+      }
+      myfun();
+    </script>
+  </body>
+</html>
